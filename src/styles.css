@@ -1,0 +1,54 @@
+.task-manager {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  
+  .add-task {
+    display: flex;
+    gap: 10px; /* Space between input fields and button */
+    margin-bottom: 20px;
+  }
+  
+  .add-task input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-task button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+      gap: 20px;
+  }
+  
+  .task {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column; /* Align title, description, and button vertically */
+  }
+  
+  .task h3 {
+    margin-top: 0; /* Remove default margin for h3 */
+  }
+  
+  .task button {
+    margin-top: 10px; /* Space between description and button */
+    padding: 5px 10px;
+    background-color: #f44336; /* Red color for delete button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end; /* Align button to the right */
+  }
